@@ -1,0 +1,13 @@
+article {
+  max-width: 40ch;
+  width: 100%;
+  margin: 3rem auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
