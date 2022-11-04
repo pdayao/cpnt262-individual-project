@@ -19,6 +19,7 @@ const fetchData = async function(endpoint) {
       output += `
       <article>
         <h2>${film.title}</h2>
+        <img src="${film.image}" alt="Movie poster of ${film.title}">
         <ul>
           <li>id: ${film.id}</li>
           <li>Title: ${film.title}</li>
@@ -30,7 +31,9 @@ const fetchData = async function(endpoint) {
           <li>Release Date: ${film.release_date}</li>
           <li>Running Time: ${film.running_time}</li>
           <li>Rotten Tomato Score: ${film.rt_score}</li>
-          <li>People: ${film.people}</li>
+          <li>People: 
+            <a href="${film.people}">${film.people}</a>
+          </li>
           <li>Species: 
             <a href="${film.species}">${film.species}</a>
           </li>
